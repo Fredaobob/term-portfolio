@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: #481E14;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar-items {
+    padding-left: 2rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar-items a {
+    text-decoration-color: blue;
+    font-family: "Encode Sans SC", sans-serif;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: #f5f5f5;
+}
+
+footer {
+    width: 100%;           /* Full width of the viewport */
+    position: fixed;       /* Fixed position to keep it at the bottom */
+    bottom: 0;             /* Align at the bottom of the viewport */
+    text-align: center;    /* Center the text inside the footer */
+     /* Optional: Padding for spacing */
+    color: white;          /* Text color */
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    padding: 0px;  
+}
+
+@media (max-width: 768px) {
+    .navbar-items {
+        flex-direction: row; /* Stack the navbar items vertically */
+        gap: 1rem; /* Reduce the gap for smaller screens */
+        padding-left: 1.45rem; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-items a {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
